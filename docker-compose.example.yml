@@ -1,0 +1,18 @@
+version: "3"
+services:
+  docker-mssql-proxy:
+    container_name: docker-mssql-proxy
+    build: .
+    image: docker-mssql-proxy:latest
+    restart: unless-stopped
+    environment:
+      - USERNAME=user_name
+      - PASSWORD=user_password
+    security_opt:
+      - "seccomp:unconfined"
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "1433:1433"
