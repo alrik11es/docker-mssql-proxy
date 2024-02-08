@@ -1,7 +1,4 @@
 docker-compose.yml
 .idea
 nginx.conf
-ca.crt
-client.crt
-client.ovpn
-client.pem
+certs
