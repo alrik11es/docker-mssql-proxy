@@ -19,10 +19,10 @@ To use this MSSQL proxy, follow these steps:
    cd docker-mssql-proxy
    ```
 3. Make sure the following files are present in the project:
-    - `ca.crt`
-    - `client.crt`
-    - `client.ovpn`
-    - `client.pem`   
+    - `certs/ca.crt`
+    - `certs/client.crt`
+    - `certs/client.ovpn`
+    - `certs/client.pem`   
 
 4. Rename the provided example files and customize the configuration files according to your needs:
 
